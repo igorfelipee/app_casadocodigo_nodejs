@@ -1,11 +1,15 @@
 <html>
+	<head>
+		<title>Lista de Produtos</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	</head>
 	<body>
-		<table>
+		<table class="table table-striped">
 			<tr>
-				<td>id</td>
-				<td>titulo</td>
-				<td>descricao</td>
-				<td>preco</td>
+				<td>ID</td>
+				<td>Título</td>
+				<td>Descrição</td>
+				<td>Preço</td>
 			</tr>
 			<tr>
 				<%for(var i=0;i<lista.length;i++){%>
