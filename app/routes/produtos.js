@@ -3,7 +3,7 @@ module.exports = function(app){
 		var connection = app.infra.connectionFactory();
 		var produtosBanco = app.infra.produtosBanco;
 
-		produtosBanco.lista = (connection, function(erros, resultados){
+		produtosBanco.lista(connection, function(erros, resultados){
 			res.render('produtos/lista',{lista:resultados});
 		});
 		connection.end();
